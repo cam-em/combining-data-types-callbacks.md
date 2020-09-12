@@ -30,3 +30,31 @@ const crayonBox = {
   ];
   
   console.log(apartmentBuilding[0][0])
+
+
+  // 1. Create a function knit that returns an object that has the following kinds of properties item: scarf, size : 6ft etc. Log a value of that object (hint: call the function and then call a property on the return value).
+const knit = () => {
+    return {
+      item: 'scarf',
+      size: '6ft'
+    }
+  }
+  
+  console.log(knit().item);
+  
+  // 2. Create a function crayonSelector that returns an object that has an array (you can reuse your crayonBox object). Log one of the elements of that array.
+  const crayonSelector = () => {
+    return crayonBox;
+  }
+  
+  console.log(crayonSelector().crownNames[0]);
+  // 3. Create a function powerButton that returns a function called options - options should console.log a simple message like select a song. Call that inner function
+  
+  const powerButton = () => {
+    const options = () => {
+      console.log('Select a song');
+    }
+    return options();
+  }
+  
+  console.log(powerButton());
